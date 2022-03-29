@@ -8,18 +8,26 @@ function randomMath() {
     return random
 }
 
+console.log(randomMath())
+
 function User(x) {
-    do{     
-        var usertotal = (x+usertotal);
+    do{      
+
+        var number = randomMath()
+
+        var number = (x+number);
           
         alert(`The current number is ${x}
         The total number is ${usertotal}`)
       
-        if (usertotal <= 20) {
+        if (number <= 20) {
         var question = prompt("If you would like to enter another number press 'y', if you would like to stop press 'n'.")
         }
           
       } while ((question == "y") && (usertotal <= 19))  
+
+    return number
 }
+
 
 User(randomMath())
