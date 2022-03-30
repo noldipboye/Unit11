@@ -8,18 +8,15 @@ function randomMath() {
     return random
 }
 
-console.log(randomMath())
+function User() {
 
-function User(x) {
-    do{      
+    number = 0
 
-        randomMath()
+    do{ 
 
-        var number = randomMath()
-
+        var x = randomMath()
+        
         var number = (x+number);
-
-        x = 0
           
         alert(`The current number is ${x}
         The total number is ${number}`)
@@ -33,5 +30,5 @@ function User(x) {
     return number
 }
 
+User()
 
-User(randomMath())
